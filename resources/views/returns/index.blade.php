@@ -186,7 +186,20 @@ Returns from BOG ORASS <br>
 
                                                 <td scope="col" class="text-center">
 
-                                                    @if( $return['status']['name']  == 'No Data')
+                                                    {{-- {{  $return['status']['name']  }} --}}
+
+                                                    @if ( trim($return['status']['name'])  == 'No Data')
+                                                        <span class="badge badge-info">{{  $return['status']['name']  }}</span>
+                                                    @elseif(trim($return['status']['name'])  == 'Valid')
+                                                        <span class="badge badge-success">{{  $return['status']['name']  }}</span>
+                                                    @else
+                                                        <span class="badge badge-warning">{{  $return['status']['name']  }}</span>
+                                                        
+                                                    @endif
+
+
+
+                                                    {{-- @if( $return['status']['name']  == 'No Data')
                                                         <span class="badge badge-info">{{  $return['status']['name']  }}</span>
                                                     @endif
 
@@ -197,6 +210,8 @@ Returns from BOG ORASS <br>
                                                     @if( $return['status']['name']  == 'In Progress')
                                                         <span class="badge badge-warning">{{  $return['status']['name']  }}</span>
                                                     @endif
+
+                                                    @Else --}}
 
 
                                                 </td>
