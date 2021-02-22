@@ -15,7 +15,8 @@
         <style type="text/css">
 
 			 .navbar-custom {
-		    	background-color: #bdbdbd!important;
+               
+		    	background-color: #bc5824!important;
 		    	color: #34080b!important;
             }
             .custom-color{

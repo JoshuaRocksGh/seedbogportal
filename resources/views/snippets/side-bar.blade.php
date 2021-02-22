@@ -27,7 +27,7 @@
                             </li>
 
                             <li>
-                                <a href="{{url('returns')}}" id="returnr-fetch-api">
+                                <a href="{{url('returns?page=1')}}" id="returnr-fetch-api">
                                     <i class="fe-bar-chart-2"></i>
                                     <!-- <span class="badge badge-success badge-pill float-right">4</span> -->
                                     <span> Returns </span>

@@ -59,8 +59,9 @@ class ReturnsController extends Controller
 
 
 
-    public function index()
+    public function index(Request $request)
     {
+        $page = $request->query('page');
 
         // return Auth::user();
 
@@ -79,7 +80,7 @@ class ReturnsController extends Controller
         try {
             // Validate the value...
 
-            $response = Http::withToken($access_token)->get("https://orassvas.bog.gov.gh:7002/v1/returns?page=1");
+            $response = Http::withToken($access_token)->get("https://orassvas.bog.gov.gh:7002/v1/returns?page=$page");
 
 
             if ($response->ok()) {

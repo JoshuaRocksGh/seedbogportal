@@ -60,13 +60,13 @@
                                             <hr>
 
                                             <p id="">
-                                                <h4 > <span> ID: &nbsp; </span>  <span id="return_details_id" class="text-success">{{ $return_id }}</span></h4>
-                                                <h4 > <span>Name:  &nbsp; </span>  <span id="return_details_name" class="text-success">{{ $return_name }}</span></h4>
-                                                <h4 > <span>Reference:  &nbsp; </span>  <span id="return_details_reference" class="text-success">{{ $return_reference }}</span></h4>
-                                                <h4 > <span>EndDate:  &nbsp; </span>  <span id="return_details_endDate" class="text-success">{{ $return_endDate }}</span></h4>
-                                                <h4 > <span>Status: &nbsp; </span>  <span id="return_details_status" class="text-success">{{ $return_status }}</span></h4>
-                                                <h4 > <span>Return Type Id: &nbsp; </span>  <span id="return_details_status" class="text-success">{{ $returnTypeId }}</span></h4>
-                                                <h4 > <span>Revision d: &nbsp; </span>  <span id="return_details_status" class="text-success">{{ $revisionId }}</span></h4>
+                                                <h4 > <span> ID: &nbsp; </span>  <span id="return_details_id" class="custom-color">{{ $return_id }}</span></h4>
+                                                <h4 > <span>Name:  &nbsp; </span>  <span id="return_details_name" class="custom-color">{{ $return_name }}</span></h4>
+                                                <h4 > <span>Reference:  &nbsp; </span>  <span id="return_details_reference" class="custom-color">{{ $return_reference }}</span></h4>
+                                                <h4 > <span>EndDate:  &nbsp; </span>  <span id="return_details_endDate" class="custom-color">{{ $return_endDate }}</span></h4>
+                                                <h4 > <span>Status: &nbsp; </span>  <span id="return_details_status" class="custom-color">{{ $return_status }}</span></h4>
+                                                <h4 > <span>Return Type Id: &nbsp; </span>  <span id="return_details_status" class="custom-color">{{ $returnTypeId }}</span></h4>
+                                                <h4 > <span>Revision d: &nbsp; </span>  <span id="return_details_status" class="custom-color">{{ $revisionId }}</span></h4>
                                             </p>
 
                                         </div>
@@ -126,7 +126,7 @@
 
                                                     <div class="modal-footer">
 
-                                                        <button type="submit" id="btn-submit-return" class="btn btn-success" >Submit Return</button>
+                                                        <button type="submit" id="btn-submit-return" class="btn btn-success custom-bg-color" >Submit Return</button>
 
                                                         <button type="button" class="btn btn-danger" onclick="window.location = 'returns' ">Cancel</button>
                                                     </div>

@@ -27,6 +27,8 @@ class LoginController extends Controller
     public function post_login(Request $request)
     {
 
+        // return $request;
+
         $validator = Validator::make($request->all(), [
 
             'username' =>  'required',

@@ -68,43 +68,83 @@
 
 
 
+    <div class="row">
+
+<div class="col-md-3">
+<p class="h4">
+Returns from BOG ORASS <br>
+</p>
+<div>
+
+</div>
+</div>
+
+<div class="col-md-5">
+<form method="GET" action="{{ url('returns') }}" autocomplete="off">
+@csrf
+<div class="row">
+<div class="input-group m-t-6">
+<a style="color: #fff;" class="btn btn-secondary btn-rounded waves-effect">{{$john['paging']['totalItemsNumber']}}:RECORDS</a>&nbsp;
+<a style="color: #fff;" class="btn btn-secondary btn-rounded waves-effect">{{$john['paging']['totalPagesNumber']}}:PAGES</a>&nbsp;
+<span class="input-group-append">
+<button type="submit" class="btn waves-effect waves-light btn-secondary "><i class="far fa-file-alt mr-1"></i>Current Page</button>
+</span>
+<input type="text" class="form-control" name="page" placeholder="page number" value="{{ Request::get('page') }}" required>
+<span class="input-group-append">
+<button type="submit" class="btn waves-effect waves-light btn-secondary "><i class="fa fa-search mr-1"></i></button>
+</span>
+
+</div>
 
 
-                  <div class="row card-box">
-                    <div class="col-md-6">
-                        <p class="h4" style="color: #34080b;">
-                           Retrieves available draft returns
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{--  <h4 class="alert-heading"><i class=""></i> Well done!</h4>  --}}
+{{-- <div class="col-md-6">
+<input type="text" name="page" class="form-control " value="" placeholder="page number" required>
+</div>
 
-                            <form method="GET" action="{{ url('search-returns') }}"  autocomplete="off">
-                                    @csrf
-                                <div class="row">
+<div class="col-md-2">
+<button class="btn btn-primary custom-bg-color" type="submit" >Fetch </button>
 
+</div> --}}
 
-                                       <div class="col-md-10" style="color: #f47324">
-                                                <input type="text" name="revision_id" class="form-control " value="" placeholder="Revision ID" required>
-                                       </div>
+</div>
 
-                                       <div class="col-md-2">
-                                                <button class="btn btn-primary  custom-bg-color" type="submit" >Search </button>
-
-                                       </div>
-
-                                </div>
-
-                                  </form>
+</form>
+</div>
 
 
-                            {{--  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>  --}}
-                        </div>
-                    </div>
-                </div>
+<div class="col-md-4">
+
+
+<form method="GET" action="{{ url('search-returns') }}" autocomplete="off">
+@csrf
+<div class="row">
+<div class="input-group m-t-3">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" class="form-control" name="revision_id" placeholder="Revision ID" required>
+<span class="input-group-append">
+<button type="submit" class="btn waves-effect waves-light btn-primary custom-bg-color"><i class="fa fa-search mr-1"></i> Search</button>
+</span>
+</div>
+
+
+{{-- <div class="col-md-10">
+<input type="text" name="revision_id" class="form-control " value="" placeholder="Revision ID" required>
+</div>
+
+<div class="col-md-2">
+<button class="btn btn-primary custom-bg-color" type="submit" >Search </button>
+
+</div> --}}
+
+</div>
+
+</form>
+
+
+
+</div>
+</div>
+<br>
 
                 <div class="row">
 
@@ -217,7 +257,7 @@
                                         <p id="dd">
 
                                             <div class="list-group">
-                                                <a href="#" class="list-group-item list-group-item-action bg-success">
+                                                <a href="#" class="list-group-item list-group-item-action" style='background-color:#34080b;'>
                                                 <h5 class="text-white"> RETURN TYPES</h5>
                                                 </a>
                                                 <p id="returnTypes">
@@ -235,7 +275,7 @@
                                         <p id="dd">
 
                                             <div class="list-group">
-                                                <a href="#" class="list-group-item list-group-item-action bg-success">
+                                                <a href="#" class="list-group-item list-group-item-action" style='background-color:#34080b;'>
                                                 <h5 class="text-white"> REVISIONS</h5>
                                                 </a>
                                                 <p id="revisions">
