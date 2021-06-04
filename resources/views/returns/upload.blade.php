@@ -128,7 +128,7 @@
 
                                                         <button type="submit" id="btn-submit-return" class="btn btn-success custom-bg-color" >Submit Return</button>
 
-                                                        <button type="button" class="btn btn-danger" onclick="window.location = 'returns' ">Cancel</button>
+                                                        <button type="button" class="btn btn-danger" onclick="window.location = 'home' ">Cancel</button>
                                                     </div>
                                                 </div>
                                             </form>

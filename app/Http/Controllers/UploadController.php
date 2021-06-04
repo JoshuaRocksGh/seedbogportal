@@ -119,7 +119,7 @@ class UploadController extends Controller
         $request->file->move(public_path('uploads/returns'), $filename);
 
 
-        $file = "http://localhost/laravel/atwimabogportal/public" . '/uploads/returns/' . $filename;
+        $file = "http://localhost/seedbog/public" . '/uploads/returns/' . $filename;
         // return $file;
 
 

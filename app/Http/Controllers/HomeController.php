@@ -12,6 +12,12 @@ class HomeController extends Controller
 
     public function __construct()
     {
+      
+
+        if( !Session::has('user_name'))
+        {
+            return redirect()->route('login');
+        }
     }
     //
     public function index()

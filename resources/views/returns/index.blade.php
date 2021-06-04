@@ -243,7 +243,7 @@ Returns from BOG ORASS <br>
         <form action="">
             <div class="modal-content">
                 <div class="modal-header ">
-                    <h5 class="modal-title custom-color text-center" id="exampleModalLongTitle">RETURN INFORMATIONS</h5>
+                    <h5 class="modal-title custom-color text-center" id="exampleModalLongTitle">RETURN INFORMATION</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
